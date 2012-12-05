@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Biki]]></title>
-  <link href="http://basilico.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: i18n | Biki]]></title>
+  <link href="http://basilico.github.com/blog/categories/i18n/atom.xml" rel="self"/>
   <link href="http://basilico.github.com/"/>
   <updated>2012-12-05T01:56:55+01:00</updated>
   <id>http://basilico.github.com/</id>
@@ -12,211 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Registrare evento di scroll su dispositivi mobile]]></title>
-    <link href="http://basilico.github.com/blog/2012/12/05/registrare-evento-di-scroll-su-dispositivi-mobile/"/>
-    <updated>2012-12-05T01:37:00+01:00</updated>
-    <id>http://basilico.github.com/blog/2012/12/05/registrare-evento-di-scroll-su-dispositivi-mobile</id>
-    <content type="html"><![CDATA[<p>Sui dispositivi mobile, l&#8217;evento <code>scroll</code> equivale all&#8217;evento <code>touchend</code></p>
-
-<p>Si consiglia di registrare oltre all&#8217;evento di <code>scroll</code> anche l&#8217;evento <code>touchmove</code></p>
-
-<p><strong>NOTA</strong>: Utilizzare sui metodi lazyload legati allo scroll</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Atk backup snippet]]></title>
-    <link href="http://basilico.github.com/blog/2012/12/05/atk-backup-snippet/"/>
-    <updated>2012-12-05T01:28:00+01:00</updated>
-    <id>http://basilico.github.com/blog/2012/12/05/atk-backup-snippet</id>
-    <content type="html"><![CDATA[<p><strong>PROBLEMA</strong>: permettere al cliente di fare backup su server del proprio db prima di importanti modifiche.</p>
-
-<!-- more -->
-
-
-<figure class='code'><figcaption><span>backup.php (atk-backup.php)</span> <a href='http://basilico.github.com/downloads/code/atk-backup.php'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-<span class='line-number'>52</span>
-<span class='line-number'>53</span>
-<span class='line-number'>54</span>
-<span class='line-number'>55</span>
-<span class='line-number'>56</span>
-<span class='line-number'>57</span>
-<span class='line-number'>58</span>
-<span class='line-number'>59</span>
-<span class='line-number'>60</span>
-<span class='line-number'>61</span>
-<span class='line-number'>62</span>
-<span class='line-number'>63</span>
-<span class='line-number'>64</span>
-<span class='line-number'>65</span>
-<span class='line-number'>66</span>
-<span class='line-number'>67</span>
-<span class='line-number'>68</span>
-<span class='line-number'>69</span>
-<span class='line-number'>70</span>
-<span class='line-number'>71</span>
-<span class='line-number'>72</span>
-<span class='line-number'>73</span>
-<span class='line-number'>74</span>
-<span class='line-number'>75</span>
-<span class='line-number'>76</span>
-<span class='line-number'>77</span>
-<span class='line-number'>78</span>
-<span class='line-number'>79</span>
-<span class='line-number'>80</span>
-<span class='line-number'>81</span>
-<span class='line-number'>82</span>
-<span class='line-number'>83</span>
-<span class='line-number'>84</span>
-<span class='line-number'>85</span>
-<span class='line-number'>86</span>
-<span class='line-number'>87</span>
-<span class='line-number'>88</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// includes</span>
-</span><span class='line'><span class="nv">$config_atkroot</span> <span class="o">=</span> <span class="s2">&quot;./&quot;</span><span class="p">;</span>
-</span><span class='line'><span class="k">include_once</span><span class="p">(</span><span class="s2">&quot;atk.inc&quot;</span><span class="p">);</span>
-</span><span class='line'><span class="nx">atksession</span><span class="p">();</span>
-</span><span class='line'><span class="nx">atksecure</span><span class="p">();</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Utility</span>
-</span><span class='line'><span class="k">function</span> <span class="nf">format</span><span class="p">(</span><span class="nv">$s</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">return</span> <span class="nb">str_replace</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">,</span><span class="s2">&quot; - &quot;</span><span class="p">,</span><span class="nv">$s</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Defaults</span>
-</span><span class='line'><span class="k">if</span><span class="p">(</span><span class="nx">STATUS</span> <span class="o">==</span> <span class="s1">&#39;sviluppo&#39;</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nv">$mysql_bin</span> <span class="o">=</span> <span class="s2">&quot;/Applications/MAMP/Library/bin/&quot;</span><span class="p">;</span>
-</span><span class='line'>  <span class="nv">$backup_dir</span> <span class="o">=</span> <span class="s2">&quot;backups/&quot;</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="k">if</span><span class="p">(</span><span class="nx">STATUS</span> <span class="o">==</span> <span class="s1">&#39;online&#39;</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nv">$mysql_bin</span> <span class="o">=</span> <span class="s2">&quot;/usr/bin/&quot;</span><span class="p">;</span>
-</span><span class='line'>  <span class="nv">$backup_dir</span> <span class="o">=</span> <span class="s2">&quot;backups/&quot;</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Elimino</span>
-</span><span class='line'><span class="k">if</span><span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$ATK_VARS</span><span class="p">[</span><span class="s1">&#39;backup_del&#39;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$ATK_VARS</span><span class="p">[</span><span class="s1">&#39;backup_del&#39;</span><span class="p">]))</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nv">$backup</span> <span class="o">=</span> <span class="nv">$backup_dir</span> <span class="o">.</span> <span class="nv">$ATK_VARS</span><span class="p">[</span><span class="s1">&#39;backup_file&#39;</span><span class="p">]</span> <span class="o">.</span> <span class="s2">&quot;.sql&quot;</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">if</span><span class="p">(</span><span class="nb">file_exists</span><span class="p">(</span><span class="nv">$backup</span><span class="p">))</span> <span class="p">{</span>
-</span><span class='line'>    <span class="o">@</span><span class="nb">unlink</span><span class="p">(</span><span class="nv">$backup</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// </span>
-</span><span class='line'><span class="k">if</span><span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$ATK_VARS</span><span class="p">[</span><span class="s1">&#39;backup&#39;</span><span class="p">]))</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nv">$u_date</span> <span class="o">=</span> <span class="nb">date</span><span class="p">(</span><span class="s2">&quot;Y.m.d_H.i.s&quot;</span><span class="p">);</span>
-</span><span class='line'>  <span class="nb">system</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{</span><span class="nv">$mysql_bin</span><span class="si">}</span><span class="s2">mysqldump </span><span class="si">{</span><span class="nv">$config_db</span><span class="p">[</span><span class="s2">&quot;default&quot;</span><span class="p">][</span><span class="s2">&quot;db&quot;</span><span class="p">]</span><span class="si">}</span><span class="s2"> &gt; </span><span class="si">{</span><span class="nv">$backup_dir</span><span class="si">}</span><span class="s2">backup_</span><span class="si">{</span><span class="nv">$u_date</span><span class="si">}</span><span class="s2">.sql --opt -h </span><span class="si">{</span><span class="nv">$config_db</span><span class="p">[</span><span class="s2">&quot;default&quot;</span><span class="p">][</span><span class="s2">&quot;host&quot;</span><span class="p">]</span><span class="si">}</span><span class="s2"> -u </span><span class="si">{</span><span class="nv">$config_db</span><span class="p">[</span><span class="s2">&quot;default&quot;</span><span class="p">][</span><span class="s2">&quot;user&quot;</span><span class="p">]</span><span class="si">}</span><span class="s2">  --password=</span><span class="si">{</span><span class="nv">$config_db</span><span class="p">[</span><span class="s2">&quot;default&quot;</span><span class="p">][</span><span class="s2">&quot;password&quot;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nv">$res</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Status dei salvataggi durante la sessione</span>
-</span><span class='line'><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$res</span><span class="p">))</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nv">$o_status</span> <span class="o">=</span> <span class="s1">&#39;&lt;font color=&quot;gray&quot;&gt;&lt;strong&gt;NON ESEGUITO&lt;/strong&gt;&lt;/font&gt;&#39;</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span><span class="k">elseif</span><span class="p">(</span><span class="nv">$res</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nv">$o_status</span> <span class="o">=</span> <span class="s1">&#39;&lt;font color=&quot;green&quot;&gt;&lt;strong&gt;ESEGUITO&lt;/strong&gt;&lt;/font&gt;&#39;</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span> <span class="k">elseif</span><span class="p">(</span><span class="nv">$res</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nv">$o_status</span> <span class="o">=</span> <span class="s1">&#39;&lt;font color=&quot;red&quot;&gt;&lt;strong&gt;ERRORE&lt;/strong&gt;&lt;/font&gt;&#39;</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Creo elenco delle cartelle già presenti</span>
-</span><span class='line'><span class="k">foreach</span> <span class="p">(</span><span class="nb">glob</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{</span><span class="nv">$backup_dir</span><span class="si">}</span><span class="s2">*.sql&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="nv">$x_folder</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nv">$x_folder</span> <span class="o">=</span> <span class="nb">basename</span><span class="p">(</span><span class="nv">$x_folder</span><span class="p">,</span><span class="s2">&quot;.sql&quot;</span><span class="p">);</span>
-</span><span class='line'>  <span class="nv">$x_folder_view</span> <span class="o">=</span> <span class="nx">format</span><span class="p">(</span><span class="nv">$x_folder</span><span class="p">);</span>
-</span><span class='line'>  <span class="nv">$o_options</span><span class="o">.=</span> <span class="s2">&quot;&lt;option value=</span><span class="se">\&quot;</span><span class="si">$x_folder</span><span class="se">\&quot;</span><span class="s2">&gt;</span><span class="si">$x_folder_view</span><span class="s2">&lt;/option&gt;&quot;</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Output Vars</span>
-</span><span class='line'><span class="nv">$o_title</span> <span class="o">=</span> <span class="s2">&quot;Backup gestionale&quot;</span><span class="p">;</span>
-</span><span class='line'><span class="nv">$o_content</span> <span class="o">=</span> <span class="o">&lt;&lt;&lt;</span> <span class="nx">HTML</span>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;&lt;</span><span class="nx">br</span><span class="o">&gt;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">Esito</span> <span class="nx">del</span> <span class="nx">backup</span><span class="o">:</span> <span class="nv">$o_status</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;&lt;</span><span class="nx">br</span><span class="o">&gt;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>
-</span><span class='line'>  <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onclick</span><span class="o">=</span><span class="s2">&quot;location.href=&#39;backup.php?backup&#39;;this.disabled=true;&quot;</span><span class="o">&gt;</span><span class="nx">Esegui</span> <span class="nx">backup</span><span class="o">&lt;/</span><span class="nx">button</span><span class="o">&gt;</span>
-</span><span class='line'><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">hr</span><span class="o">&gt;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;&lt;</span><span class="nx">br</span><span class="o">&gt;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;&lt;</span><span class="nx">strong</span><span class="o">&gt;</span><span class="nx">Manutenzione</span><span class="o">&lt;/</span><span class="nx">strong</span><span class="o">&gt;&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">form</span><span class="o">&gt;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>
-</span><span class='line'>  <span class="nx">Elimina</span> <span class="nx">backup</span><span class="o">:</span>
-</span><span class='line'>  <span class="o">&lt;</span><span class="nx">select</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&quot;backup_file&quot;</span> <span class="nx">onchange</span><span class="o">=</span><span class="s2">&quot;document.getElementById(&#39;backup_del&#39;).disabled=false;&quot;</span><span class="o">&gt;</span>
-</span><span class='line'>    <span class="o">&lt;</span><span class="nx">option</span><span class="o">&gt;</span><span class="nx">Scegli</span> <span class="nx">backup</span><span class="o">...&lt;/</span><span class="nx">option</span><span class="o">&gt;</span>
-</span><span class='line'>    <span class="nv">$o_options</span>
-</span><span class='line'>  <span class="o">&lt;/</span><span class="nx">select</span><span class="o">&gt;</span>
-</span><span class='line'>  <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;submit&quot;</span> <span class="nx">disabled</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&quot;backup_del&quot;</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;backup_del&quot;</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&quot;Elimina backup&quot;</span> <span class="o">/&gt;</span>
-</span><span class='line'><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
-</span><span class='line'><span class="o">&lt;/</span><span class="nx">form</span><span class="o">&gt;</span>
-</span><span class='line'><span class="nx">HTML</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// page class setup</span>
-</span><span class='line'><span class="nv">$indexpage</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nx">atknew</span><span class="p">(</span><span class="s1">&#39;atk.ui.atkindexpage&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="nv">$indexpage</span><span class="o">-&gt;</span><span class="na">atkGenerateTop</span><span class="p">();</span>
-</span><span class='line'><span class="nv">$indexpage</span><span class="o">-&gt;</span><span class="na">atkGenerateMenu</span><span class="p">();</span>
-</span><span class='line'><span class="nv">$box</span> <span class="o">=</span> <span class="nv">$indexpage</span><span class="o">-&gt;</span><span class="na">m_ui</span><span class="o">-&gt;</span><span class="na">renderBox</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s2">&quot;title&quot;</span><span class="o">=&gt;</span><span class="nv">$o_title</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="o">=&gt;</span><span class="nv">$o_content</span><span class="p">));</span>
-</span><span class='line'><span class="nv">$indexpage</span><span class="o">-&gt;</span><span class="na">m_page</span><span class="o">-&gt;</span><span class="na">addContent</span><span class="p">(</span><span class="nv">$box</span><span class="p">);</span>
-</span><span class='line'><span class="nv">$indexpage</span><span class="o">-&gt;</span><span class="na">m_output</span><span class="o">-&gt;</span><span class="na">output</span><span class="p">(</span><span class="nv">$indexpage</span><span class="o">-&gt;</span><span class="na">m_page</span><span class="o">-&gt;</span><span class="na">render</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">$o_title</span><span class="s2">&quot;</span><span class="p">));</span>
-</span><span class='line'><span class="nv">$indexpage</span><span class="o">-&gt;</span><span class="na">m_output</span><span class="o">-&gt;</span><span class="na">outputFlush</span><span class="p">();</span>
-</span></code></pre></td></tr></table></div></figure>
-
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Slug Cirillico con Doctrine 1.2]]></title>
@@ -238,7 +33,7 @@
 <!-- more -->
 
 
-<figure class='code'><figcaption><span>Inflector.php (doctrine-cirillico.php)</span> <a href='http://basilico.github.com/downloads/code/doctrine-cirillico.php'>download</a></figcaption>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Inflector.php (doctrine-cirillico.php)</span> <a href='/downloads/code/doctrine-cirillico.php'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -841,8 +636,7 @@
 </span><span class='line'>        <span class="k">return</span> <span class="nx">trim</span><span class="p">(</span><span class="nv">$text</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">);</span>
 </span><span class='line'>    <span class="p">}</span>
 </span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 ]]></content>
   </entry>
   
