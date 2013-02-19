@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: jquery | Biki]]></title>
-  <link href="http://basilico.github.com/blog/categories/jquery/atom.xml" rel="self"/>
+  <title><![CDATA[Category: user input | Biki]]></title>
+  <link href="http://basilico.github.com/blog/categories/user-input/atom.xml" rel="self"/>
   <link href="http://basilico.github.com/"/>
   <updated>2013-02-19T16:11:50+01:00</updated>
   <id>http://basilico.github.com/</id>
@@ -54,19 +54,6 @@ $.ctrl('S', function() {
 </span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="p">});</span>
 </span><span class='line'><span class="p">};</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Registrare evento di scroll su dispositivi mobile]]></title>
-    <link href="http://basilico.github.com/blog/2012/12/05/registrare-evento-di-scroll-su-dispositivi-mobile/"/>
-    <updated>2012-12-05T01:37:00+01:00</updated>
-    <id>http://basilico.github.com/blog/2012/12/05/registrare-evento-di-scroll-su-dispositivi-mobile</id>
-    <content type="html"><![CDATA[<p>Sui dispositivi mobile, l'evento <code>scroll</code> equivale all'evento <code>touchend</code></p>
-
-<p>Si consiglia di registrare oltre all'evento di <code>scroll</code> anche l'evento <code>touchmove</code></p>
-
-<p><strong>NOTA</strong>: Utilizzare sui metodi lazyload legati allo scroll</p>
 ]]></content>
   </entry>
   
